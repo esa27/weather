@@ -1,8 +1,8 @@
-/* Общие стили */
+
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Градиентный фон */
-    color: #01579b; /* Тёмно-голубой цвет текста */
+    background: linear-gradient(135deg, #e0f7fa, #80deea); 
+    color: #01579b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,44 +10,44 @@ body {
     margin: 0;
 }
 
-/* Контейнер для контента */
+
 .container {
-    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    background: rgba(255, 255, 255, 0.9); 
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объёма */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     text-align: center;
     max-width: 400px;
     width: 100%;
 }
 
-/* Заголовок */
+
 h1 {
     font-size: 28px;
-    color: #0277bd; /* Голубой цвет заголовка */
+    color: #0277bd; 
     margin-bottom: 20px;
 }
 
-/* Поле ввода */
+
 input[type="text"] {
     width: 80%;
     padding: 12px;
     font-size: 16px;
-    border: 2px solid #80deea; /* Голубая рамка */
+    border: 2px solid #80deea; 
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus {
-    border-color: #00bcd4; /* Яркий голубой при фокусе */
+    border-color: #00bcd4; 
 }
 
-/* Кнопка */
+
 button {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #00bcd4; /* Голубой цвет кнопки */
+    background-color: #00bcd4; 
     color: white;
     border: none;
     border-radius: 8px;
@@ -57,48 +57,29 @@ button {
 }
 
 button:hover {
-    background-color: #0097a7; /* Тёмно-голубой при наведении */
-    transform: scale(1.05); /* Увеличение кнопки при наведении */
+    background-color: #0097a7; 
+    transform: scale(1.05); 
 }
 
 button:active {
-    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+    transform: scale(0.95); 
 }
 
-/* Блок с информацией о погоде */
+
 #weather-info {
     margin-top: 25px;
     font-size: 18px;
-    color: #00695c; /* Тёмно-голубой цвет текста */
-    background: rgba(178, 235, 242, 0.3); /* Полупрозрачный голубой фон */
+    color: #00695c; 
+    background: rgba(178, 235, 242, 0.3); 
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Иконка погоды */
+
 #weather-info img {
     margin-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    input[type="text"] {
-        width: 90%;
-    }
-
-    button {
-        width: 100%;
-        padding: 10px;
-    }
-}
